@@ -121,6 +121,15 @@ body {
 	width: 50%;
 }
 
+@media (max-width: 940px) {
+	.even-columns {
+		flex-direction: column;
+	}
+	.even-columns > * {
+		width: 100%;
+	}
+}
+
 .primary-heading {
 	font-size: var(--fs-primary-heading);
 	font-weight: var(--fw-bold);
