@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Gallery</title>
+		<link rel="stylesheet" href="css/gallery.css" />
+	</head>
+	<body>
+		<header class="main-header" id="header">
+			<nav class="main-nav">
+				<a href="" class="main-logo"
+					><img class="logo-img" src="images/lloretlogo.png" alt="logo"
+				/></a>
+				<label for="nav-toggle" class="nav-open"
+					><svg
+						class="icon-hamburger__svg"
+						xmlns="http://www.w3.org/2000/svg"
+						height="32px"
+						viewBox="0 -960 960 960"
+						width="32px"
+						fill="#b6a796"
+					>
+						<path
+							d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+						/></svg
+				></label>
+				<input
+					type="checkbox"
+					class="visually-hidden"
+					name="nav-toggle"
+					id="nav-toggle"
+				/>
+				<label for="nav-toggle" id="overlay"></label>
+				<div class="nav-links">
+					<label for="nav-toggle" class="nav-close"
+						><svg
+							class="icon-close__svg"
+							xmlns="http://www.w3.org/2000/svg"
+							height="32px"
+							viewBox="0 -960 960 960"
+							width="32px"
+							fill="#b6a796"
+						>
+							<path
+								d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+							/></svg
+					></label>
+					<a href="index.html" class="nav-link">Home</a>
+					<a href="about.html" class="nav-link">About</a>
+					<a href="gallery.html" class="nav-link">Gallery</a>
+					<a href="contact.html" class="nav-link">Contact</a>
+				</div>
+			</nav>
+		</header>
+		<input
+			type="checkbox"
+			class="visually-hidden"
+			id="side-toggle"
+			name="side-toggle"
+		/>
+		<nav class="side-nav">
+			<label class="side-toggle-btn" for="side-toggle"
+				><svg
+					class="side-toggle_svg"
+					xmlns="http://www.w3.org/2000/svg"
+					height="32px"
+					viewBox="0 -960 960 960"
+					width="32px"
+					fill="#e8eaed"
+				>
+					<path
+						d="M120-240v-80h520v80H120Zm664-40L584-480l200-200 56 56-144 144 144 144-56 56ZM120-440v-80h400v80H120Zm0-200v-80h520v80H120Z"
+					/></svg
+			></label>
+			<a href="#header" class="side-link">Top</a>
+			<a href="#section1" class="side-link">Lorem</a>
+			<a href="#section2" class="side-link">Lorem</a>
+			<a href="#section3" class="side-link">Lorem</a>
+			<a href="#section4" class="side-link">Lorem</a>
+		</nav>
+	</body>
+</html>
