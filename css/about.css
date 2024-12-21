@@ -58,9 +58,7 @@
 }
 
 /* CSS reset */
-*,
-*::before,
-*::after {
+* {
 	box-sizing: border-box;
 }
 
@@ -73,10 +71,6 @@ p {
 	margin: 0;
 }
 
-html:focus-within {
-	scroll-behavior: smooth;
-}
-
 html,
 body {
 	min-height: 100%;
@@ -86,8 +80,6 @@ body {
 
 body {
 	min-height: 100vh;
-	text-rendering: optimizeSpeed;
-	line-height: 1.5;
 }
 
 img {
@@ -112,31 +104,6 @@ body {
 	padding-inline: var(--size-500);
 }
 
-.even-columns {
-	display: flex;
-	justify-content: space-between;
-	gap: var(--size-400);
-	text-align: center;
-	background-color: var(--clr-accent-100);
-	box-shadow: 5px 5px 10px var(--clr-primary-400);
-	border-top: 4px solid var(--clr-neutral-900);
-	border-left: 4px solid var(--clr-neutral-900);
-	border-bottom: 4px solid var(--clr-primary-400);
-	border-right: 4px solid var(--clr-primary-400);
-}
-.even-columns > * {
-	width: 50%;
-}
-
-@media (max-width: 940px) {
-	.even-columns {
-		flex-direction: column;
-	}
-	.even-columns > * {
-		width: 100%;
-	}
-}
-
 .primary-heading {
 	font-size: var(--fs-primary-heading);
 	font-weight: var(--fw-bold);
@@ -151,6 +118,9 @@ body {
 	display: grid;
 	place-items: center;
 	padding: var(--size-400);
+	text-align: center;
+	background-color: var(--clr-accent-400);
+	border: 4px solid var(--clr-neutral-900);
 }
 
 /* main nav */
@@ -325,28 +295,16 @@ body {
 	display: flex;
 	height: 100vh;
 	width: 100vw;
-	justify-content: flex-start;
-	align-items: flex-end;
-	background: url(../images/bg1.jpg);
+	justify-content: center;
+	align-items: center;
+	background: url(../images/historyBG.jpg);
 	background-size: cover;
 }
-
-.hero-content {
-	display: flex;
-	flex-direction: column;
-	max-width: 65ch;
-	margin: var(--size-500);
+.hero .primary-heading {
+	border-radius: var(--size-600);
 	padding: var(--size-400);
-	border-radius: var(--size-500);
-	background-color: var(--clr-accent-400-07);
-	box-shadow: 5px 5px 10px var(--clr-neutral-900);
-	/* opacity: 0.2; */
-}
-
-.hero-text {
-	font-size: var(--fs-hero-text);
-	font-weight: var(--fw-bold);
-	text-wrap: pretty;
+	background-color: var(--clr-accent-100);
+	box-shadow: 5px 5px 10px var(--clr-accent-400);
 }
 
 /* Utility classes */

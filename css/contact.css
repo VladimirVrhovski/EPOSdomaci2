@@ -52,9 +52,7 @@
 }
 
 /* CSS reset */
-*,
-*::before,
-*::after {
+* {
 	box-sizing: border-box;
 }
 
@@ -67,10 +65,6 @@ p {
 	margin: 0;
 }
 
-html:focus-within {
-	scroll-behavior: smooth;
-}
-
 html,
 body {
 	min-height: 100%;
@@ -80,8 +74,6 @@ body {
 
 body {
 	min-height: 100vh;
-	text-rendering: optimizeSpeed;
-	line-height: 1.5;
 }
 
 img {
@@ -311,36 +303,6 @@ body {
 #side-toggle:checked ~ .side-nav {
 	right: 0;
 	transition-duration: 600ms;
-}
-
-/* hero */
-
-.hero {
-	display: flex;
-	height: 100vh;
-	width: 100vw;
-	justify-content: flex-start;
-	align-items: flex-end;
-	background: url(../images/bg1.jpg);
-	background-size: cover;
-}
-
-.hero-content {
-	display: flex;
-	flex-direction: column;
-	max-width: 65ch;
-	margin: var(--size-500);
-	padding: var(--size-400);
-	border-radius: var(--size-500);
-	background-color: var(--clr-accent-400-07);
-	box-shadow: 5px 5px 10px var(--clr-neutral-900);
-	/* opacity: 0.2; */
-}
-
-.hero-text {
-	font-size: var(--fs-hero-text);
-	font-weight: var(--fw-bold);
-	text-wrap: pretty;
 }
 
 /* Utility classes */
