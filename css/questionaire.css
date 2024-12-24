@@ -87,7 +87,9 @@ body {
 	font-family: "Montserrat", "Courier New", Courier, monospace;
 	font-size: var(--fs-body);
 	color: var(--clr-primary-400);
-	background-color: var(--clr-neutral-200);
+	background: url(../images/qBG.jpg);
+	background-size: cover;
+	background-position: center;
 }
 
 .section {
@@ -96,31 +98,6 @@ body {
 	margin-block: 15vh;
 	margin-inline: auto;
 	padding-inline: var(--size-500);
-}
-
-.even-columns {
-	display: flex;
-	justify-content: space-between;
-	gap: var(--size-400);
-	text-align: center;
-	background-color: var(--clr-accent-100);
-	box-shadow: 5px 5px 10px var(--clr-primary-400);
-	border-top: 4px solid var(--clr-neutral-900);
-	border-left: 4px solid var(--clr-neutral-900);
-	border-bottom: 4px solid var(--clr-primary-400);
-	border-right: 4px solid var(--clr-primary-400);
-}
-.even-columns > * {
-	width: 50%;
-}
-
-@media (max-width: 940px) {
-	.even-columns {
-		flex-direction: column;
-	}
-	.even-columns > * {
-		width: 100%;
-	}
 }
 
 .primary-heading {
@@ -137,6 +114,19 @@ body {
 	display: grid;
 	place-items: center;
 	padding: var(--size-400);
+}
+
+input[type="range"] {
+	width: 200px;
+}
+input[type="text"],
+select {
+	padding: var(--size-400);
+	border: none;
+	border-radius: 100vw;
+	color: var(--clr-primary-400);
+	font-size: var(--fs-400);
+	font-weight: var(--fw-bold);
 }
 
 /* main nav */
@@ -332,3 +322,5 @@ main {
 .visually-hidden {
 	display: none;
 }
+
+/* to delete in html name id value that are empty */

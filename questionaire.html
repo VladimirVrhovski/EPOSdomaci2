@@ -4,7 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Questionaire</title>
-		<link rel="stylesheet" href="css/contact.css" />
+		<link rel="stylesheet" href="css/questionaire.css" />
 	</head>
 	<body>
 		<header class="main-header" id="header">
@@ -85,55 +85,84 @@
 				<h1 class="primary-heading">Questionaire</h1>
 				<label>1. Have you ever visited Lloret de Mar?</label>
 				<div>
-					<label>Yes</label><input type="radio" name="yn" id="yn" /><label
-						>No</label
-					><input type="radio" name="yn" id="yn" />
+					<label>Yes</label><input type="radio" name="yn" /><label>No</label
+					><input type="radio" name="yn" />
 				</div>
 				<label
 					>2. What is the first thing that comes to mind when you hear about
 					Lloret de Mar?</label
 				>
-				<input type="text" />
-				<label>3. How familiar are you with Lloret de Mar’s history?</label>
-				<input type="text" />
+				<div><label for="">Beaches</label><input type="radio" name="ft" /></div>
+				<div>
+					<label for="">Nightlife</label><input type="radio" name="ft" id="" />
+				</div>
+				<div>
+					<label for="">History and culture</label
+					><input type="radio" name="ft" id="" />
+				</div>
+				<div>
+					<label for="">Other (Specify)</label
+					><input type="radio" name="ft" id="" />
+				</div>
+				<input type="text" name="" id="" />
+				<label
+					>3. How familiar are you with Lloret de Mar’s history?(1-not familiar,
+					5-very familiar)
+				</label>
+				<div>1<input type="range" min="1" max="5" />5</div>
 				<label
 					>4. Are you interested in visiting Lloret de Mar in the future?</label
 				>
-				<input type="text" />
+				<div>
+					<label>Yes</label><input type="radio" name="yn1" /><label>No</label
+					><input type="radio" name="yn1" />
+				</div>
 				<label
 					>5. What type of activities would interest you most in Lloret de
 					Mar?</label
 				>
-				<input type="text" />
+				<div>
+					<label for="">Relaxing on the beach</label>
+					<input type="checkbox" name="" id="" />
+				</div>
+				<div>
+					<label for="">Exploring historical landmarks</label>
+					<input type="checkbox" name="" id="" />
+				</div>
+				<div>
+					<label for="">Enjoying nightlife and entertainment</label>
+					<input type="checkbox" name="" id="" />
+				</div>
+				<div>
+					<label for="">Outdoor activities like hiking or water sports</label>
+					<input type="checkbox" name="" id="" />
+				</div>
 				<label
-					>6. Do you value historical and cultural landmarks when choosing a
-					travel destination?</label
+					>6. Which aspect of Lloret de Mar is most appealing to you?</label
 				>
 				<input type="text" />
 				<label
-					>7. Which aspect of Lloret de Mar is most appealing to you?</label
-				>
-				<input type="text" />
-				<label
-					>8. Do you think Lloret de Mar is suitable for family vacations? Why
+					>7. Do you think Lloret de Mar is suitable for family vacations? Why
 					or why not?</label
 				>
 				<input type="text" />
 				<label
-					>9. How important is it for a destination to offer both relaxation and
-					adventure?</label
-				>
-				<input type="text" />
-				<label
-					>10. What would motivate you to choose Lloret de Mar over other
+					>8. What would motivate you to choose Lloret de Mar over other
 					destinations?</label
 				>
-				<input type="text" />
+				<select name="" id="">
+					<option value="">Affordability</option>
+					<option value="">
+						Proximity to other attractions (e.g., Barcelona)
+					</option>
+					<option value="">Unique culture and history</option>
+					<option value="">Recommendations from others</option>
+				</select>
 				<label
-					>11. If you’ve been to Lloret de Mar, how would you rate your
+					>9. If you’ve been to Lloret de Mar, how would you rate your
 					experience on a scale of 1 to 10?</label
 				>
-				<input type="text" />
+				<div>1<input type="range" min="1" max="10" />10</div>
 				<input type="submit" value="Done" />
 			</form>
 		</main>
