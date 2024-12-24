@@ -1,14 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Limelight&display=swap");
 
 :root {
-	--clr-primary-400: rgb(13, 53, 63);
-	--clr-neutral-900: rgb(0, 100, 117);
-	--clr-neutral-200: rgb(1, 209, 209);
-	--clr-accent-400: rgb(245, 125, 108);
-	--clr-accent-100: rgb(246, 245, 199);
-	--clr-neutral-200-05: rgba(139, 133, 123, 0.5);
-	--clr-accent-400-07: rgba(245, 125, 108, 0.7);
-
 	--clr-primary-400: rgb(48, 32, 85);
 	--clr-neutral-900: rgb(129, 116, 160);
 	--clr-neutral-200: rgb(168, 136, 181);
