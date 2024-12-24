@@ -305,6 +305,28 @@ body {
 	transition-duration: 600ms;
 }
 
+/* Main */
+
+main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-block: 5rem;
+}
+
+.questionaire {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: var(--size-500);
+	padding: var(--size-600);
+	margin-inline: var(--size-600);
+	background-color: var(--clr-accent-400);
+	border-radius: var(--size-700);
+	border: 4px solid var(--clr-neutral-900);
+	box-shadow: 5px 5px 10px var(--clr-primary-400);
+}
+
 /* Utility classes */
 
 .visually-hidden {
